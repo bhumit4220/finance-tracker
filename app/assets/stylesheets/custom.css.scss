@@ -1,2 +1,18 @@
 @import 'bootstrap/dist/css/bootstrap';
 
+.search-area{
+    padding-top: 50px;
+}
+
+.no-right-padding{
+    padding-right: 5px;
+}
+
+.no-left-padding{
+    padding-top: -5px;
+    padding-left: 0 !important;
+}
+
+.results-block{
+    display: inline-block;
+}
