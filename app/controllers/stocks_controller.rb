@@ -20,5 +20,11 @@ class StocksController < ApplicationController
         end
       end
     end
-  
+    
+    def refresh
+      stock=Stock.find(params[:format])
+      updated_stock=Stock.new_lookup(stock.ticker)
+      stock.update(last_price: updated_stock.last_price)
+      redirect_to my_portfolio_path
+    end
   end
